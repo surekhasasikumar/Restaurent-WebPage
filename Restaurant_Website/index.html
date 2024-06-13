@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Restaurant</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <h2 class="logo">Gourmet</h2>
+
+            <ul class="navigations">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>About Us</li>
+                <li>Contact</li>
+            </ul>
+            <ul class="table">
+                <li class="book-table">Book a table</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home">
+            <div class="left-side">
+                <h2>Welcome to Our Restaurant</h2>
+                <p>Experience the best dining with us.</p>
+            </div>
+            <div class="right-side">
+                <img class="home-img" src="Assets/Home-Img.jpg" width="500px" height="500px" alt="Home Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>Welcome to <strong>Gourmet</strong>, where culinary artistry meets a warm and inviting ambiance. 
+                Our skilled chefs craft each dish with passion and precision, ensuring a delightful dining 
+                experience for every guest. Join us and indulge in a symphony of tastes that promises 
+                to tantalize your palate and create unforgettable memories.</p>
+        </div>
+        <div class="about-img">
+            <img src="Assets/pexels-valeriya-1833349.jpg" alt="About Image">
+        </div>
+    </section>
+    
+    <section id="menu">
+        <h2>Our Special dishes</h2>
+        <div class="menu-item">
+            <div class="item-info">
+                <img src="Assets/chicken-hyderabadi-biryani.jpg" alt="Dish Image">
+                <h3>Dish Name</h3>
+                <p>Dish Information</p>
+                <p>Price: $XX.XX</p>
+            </div>
+            <div class="item-info">
+                <img src="Assets/close-up-delicious-chicken-meal_23-2150741827_1.jpg" alt="Dish Image">
+                <h3>Dish Name</h3>
+                <p>Dish Information</p>
+                <p>Price: $XX.XX</p>
+            </div>
+            <div class="item-info">
+                <img src="Assets/delicious-food-prepared-jewish-hanukkah-celebration_23-2151112307_1.jpg" alt="Dish Image">
+                <h3>Dish Name</h3>
+                <p>Dish Information</p>
+                <p>Price: $XX.XX</p>
+            </div>
+            <div class="item-info">
+                <img src="Assets/Kerala_special_fish_fry.jpg" alt="Dish Image">
+                <h3>Dish Name</h3>
+                <p>Dish Information</p>
+                <p>Price: $XX.XX</p>
+            </div>
+            <div class="item-info">
+                <img src="Assets/taste-magic-delicious-food-experiences-ai-generated-best-food-photo_1070043-16439_1.jpg" alt="Dish Image">
+                <h3>Dish Name</h3>
+                <p>Dish Information</p>
+                <p>Price: $XX.XX</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="table-book">
+        <h2>Book a Table</h2>
+        <form id="booking-form">
+            <label for="booking-name">Name:</label>
+            <input type="text" id="booking-name" name="booking-name" required>
+
+            <label for="booking-email">Email:</label>
+            <input type="email" id="booking-email" name="booking-email" required>
+
+            <label for="booking-phone">Phone Number:</label>
+            <input type="number" id="booking-phone" name="booking-phone" required>
+
+            <label for="booking-date">Date:</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+
+            <label for="booking-time">Time slot:</label>
+            <input type="time" id="booking-time" name="booking-time" required>
+
+            <label for="booking-guests">Number of guests:</label>
+            <input type="number" id="booking-guests" name="booking-guests" required>
+
+            <label for="booking-occassion">Occassion:</label>
+            <select id="booking-occassion" name="booking-occassion">
+                <option value="None">None</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Proposal">Proposal</option>
+                <option value="Anniversary">Anniversary</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="booking-comments">Comments:</label>
+            <textarea id="booking-comments" name="booking-comments"></textarea>
+
+            <button type="submit">Book</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        
+        <div class="contact-left">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <img src="Assets/happy-waiter-serving-food-group-cheerful-friends-pub_637285-12525.jpg" alt="Contact Image">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gourmet. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
